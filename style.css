@@ -1108,7 +1108,7 @@ address > .location:hover {
 }
 
 .contact-form > a:hover {
-    background-color: hsl(36, 100%, 78%);
+    background-color: #ffd28f;
 }
 
 .contact-form > a > img {
@@ -1128,4 +1128,579 @@ footer > .copyright {
     text-transform: uppercase;
     text-align: center;
     padding-block: 8em 2.8em;
+}
+
+
+
+
+/* Responsive Styles */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+/* Mobile First Approach */
+@media (max-width: 768px) {
+  /* Header */
+  .header-top {
+    padding: 0 16px;
+    height: 60px;
+  }
+
+  .header-top > .book-now-btn {
+    display: none;
+  }
+
+  .header-top > .logo img {
+    width: 100px;
+    height: auto;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar-container {
+    display: none !important;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: hsl(195, 60%, 4%);
+    border-top: 1px solid hsl(36, 100%, 78%, 0.3);
+  }
+
+  .navbar-container.active {
+    display: flex !important;
+  }
+
+  .nav-items {
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0;
+    gap: 0 !important;
+  }
+
+  .nav-item {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-item-link {
+    display: block;
+    padding: 15px 20px;
+    border-bottom: 1px solid hsl(36, 100%, 78%, 0.1);
+  }
+
+  /* Home */
+  #home {
+    min-height: 70vh;
+    padding: 0 1em;
+  }
+
+  .home-text > h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .home-actions {
+    flex-direction: column;
+    padding: 30px 20px !important;
+    gap: 15px !important;
+  }
+
+  .home-action {
+    width: 100% !important;
+  }
+
+  .home-btn {
+    width: 100%;
+    min-width: auto !important;
+  }
+
+  /* About */
+  #about {
+    padding: 4em 1em 0;
+  }
+
+  .about-img {
+    height: 250px !important;
+    margin-bottom: 3em !important;
+  }
+
+  .section-heading {
+    font-size: 2rem !important;
+    line-height: 1.3 !important;
+  }
+
+  /* Rooms */
+  #rooms {
+    padding: 4em 1em 0 !important;
+  }
+
+  .rooms-cards {
+    flex-direction: column;
+    padding-inline: 0 !important;
+    gap: 2em !important;
+    margin-block: 2em 3em !important;
+  }
+
+  .room-card {
+    width: 100%;
+  }
+
+  /* Services */
+  #services {
+    padding: 4em 1em 0 !important;
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .services-text {
+    width: 100%;
+  }
+
+  .services-list > .service-item {
+    width: 100% !important;
+    font-size: 1.1rem;
+  }
+
+  .services-img {
+    width: 100% !important;
+    height: 400px !important;
+  }
+
+  /* Statistics */
+  #statistics {
+    padding: 4em 1em 0 !important;
+    flex-wrap: wrap;
+    gap: 2em;
+  }
+
+  .statistic-item {
+    flex: 1 1 45%;
+    text-align: center;
+  }
+
+  .stat-number {
+    font-size: 3rem !important;
+  }
+
+  .stat-text {
+    font-size: 1.2rem !important;
+  }
+
+  /* Testimonials */
+  #testimonials {
+    padding: 4em 1em 0 !important;
+  }
+
+  .testimonial-box {
+    flex-direction: column;
+    align-items: center !important;
+    gap: 1em;
+  }
+
+  .testimonial-box > img {
+    display: none;
+  }
+
+  .testimonial {
+    font-size: 1.1rem !important;
+    text-align: center;
+  }
+
+  /* Features */
+  #features {
+    padding: 4em 1em 0 !important;
+  }
+
+  .features-container {
+    grid-template-columns: 1fr !important;
+  }
+
+  .around-feature:nth-child(odd),
+  .around-feature:nth-child(even) {
+    padding: 1em !important;
+    border-left: none !important;
+  }
+
+  .feature {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px !important;
+  }
+
+  /* Gallery */
+  #gallery {
+    padding: 4em 1em 0 !important;
+  }
+
+  .gallery-container {
+    gap: 1em;
+  }
+
+  .gallery-img {
+    width: 280px !important;
+    height: 280px !important;
+  }
+
+  /* To Top */
+  #to-top {
+    padding: 4em 1em 0 !important;
+  }
+
+  /* Footer */
+  footer {
+    padding: 3em 1em 0 !important;
+  }
+
+  .footer-top {
+    padding: 40px 20px !important;
+  }
+
+  .footer-top > .email {
+    font-size: 1.5rem;
+  }
+
+  .footer-items {
+    flex-direction: column;
+    gap: 1em !important;
+    margin-top: 1em !important;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    padding: 0 20px 40px !important;
+    gap: 2em;
+    align-items: start !important;
+  }
+
+  address {
+    flex-direction: column;
+    align-items: start !important;
+    gap: 1em !important;
+  }
+
+  .contact-form {
+    width: 100% !important;
+  }
+
+  .contact-form > input {
+    width: 100%;
+  }
+
+  .copyright {
+    padding-block: 2em 1em !important;
+  }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Header */
+  .header-top {
+    padding: 0 20px;
+  }
+
+  /* Home */
+  .home-text > h1 {
+    font-size: 2.5rem;
+  }
+
+  .home-actions {
+    padding: 40px 30px !important;
+    gap: 15px !important;
+  }
+
+  .home-action {
+    width: 180px !important;
+  }
+
+  /* Sections */
+  #about,
+  #rooms,
+  #services,
+  #statistics,
+  #testimonials,
+  #features,
+  #gallery,
+  #to-top,
+  footer {
+    padding-left: 2em !important;
+    padding-right: 2em !important;
+  }
+
+  /* Services */
+  #services {
+    flex-direction: column;
+    gap: 3em;
+  }
+
+  .services-img {
+    width: 100% !important;
+    height: 500px !important;
+  }
+
+  /* Statistics */
+  #statistics {
+    flex-wrap: wrap;
+    gap: 3em;
+  }
+
+  .statistic-item {
+    flex: 1 1 45%;
+  }
+
+  /* Features */
+  .features-container > .around-feature:nth-child(odd),
+  .features-container > .around-feature:nth-child(even) {
+    padding: 2em !important;
+  }
+
+  /* Footer */
+  .footer-bottom {
+    flex-wrap: wrap;
+    gap: 2em;
+  }
+
+  address {
+    flex: 1 1 100%;
+    justify-content: space-between;
+  }
+}
+
+/* Large Desktop Adjustments */
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+}
+
+/* Utility Classes for Responsive Typography */
+@media (max-width: 768px) {
+  .section-heading,
+  .rooms-heading,
+  .features-heading,
+  .gallery-heading {
+    font-size: 2.5rem !important;
+  }
+  
+  .room-heading {
+    font-size: 1.3rem !important;
+  }
+  
+  .feature-heading {
+    font-size: 1.8rem !important;
+  }
+}
+
+/* Touch Device Improvements */
+@media (hover: none) and (pointer: coarse) {
+  .home-action,
+  .room-btn,
+  .service-item,
+  .nav-item-link,
+  .footer-item-link {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .menu-toggle {
+    min-width: 44px;
+    min-height: 44px;
+  }
+}
+
+/* Mobile First - Home Section Responsive */
+@media (max-width: 768px) {
+    #home {
+        min-height: 80vh;
+        padding: 0 1em;
+        background-attachment: scroll;
+    }
+
+    #home > .home-text {
+        margin-top: 6em;
+        padding: 1em;
+    }
+
+    .home-text > p {
+        font-size: 1rem;
+        line-height: 1.4;
+        margin-bottom: 0.5em;
+    }
+
+    .home-text > h1 {
+        position: relative;
+        font-size: 1.8rem;
+        line-height: 1.3;
+    }
+
+    #home > .home-actions {
+        position: relative;
+        top: 200px;
+        flex-direction: column;
+        padding: 30px 20px !important;
+        gap: 15px !important;
+        background-color: hsl(195, 60%, 4%, 0.9);
+    }
+
+    .home-actions > .home-action {
+        width: 100% !important;
+        padding: 15px 12px;
+    }
+
+    .home-action > p {
+        font-size: 1rem;
+    }
+
+    .home-actions > .home-btn {
+        width: 100%;
+        min-width: auto !important;
+        height: 60px;
+        margin-top: 10px;
+    }
+
+    .home-btn > p {
+        font-size: 1rem;
+    }
+
+    .home-actions > .home-btn::after {
+        min-width: 100%;
+        height: 60px;
+    }
+
+    .home-actions > .home-btn::before {
+        height: 60px;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #home {
+        min-height: 90vh;
+    }
+    
+    .home-text > h1 {
+        
+        font-size: 2.5rem;
+    }
+
+    #home > .home-actions {
+        padding: 40px 30px !important;
+        gap: 15px !important;
+    }
+
+    .home-actions > .home-action {
+        width: 180px !important;
+    }
+
+    .home-actions > .home-btn {
+        min-width: 200px !important;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    #home {
+        min-height: 70vh;
+    }
+
+    .home-text > h1 {
+        font-size: 1.5rem;
+    }
+
+    .home-text > p {
+        font-size: 0.9rem;
+    }
+
+    #home > .home-actions {
+        padding: 20px 15px !important;
+        gap: 12px !important;
+    }
+
+    .home-action > p {
+        font-size: 0.9rem;
+    }
+
+    .home-actions > .home-btn {
+        height: 55px;
+    }
+
+    .home-btn > p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Landscape Mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+    #home {
+        min-height: 120vh;
+    }
+
+    #home > .home-text {
+        position: relative;
+        bottom: -170px;
+    }
+
+    .home-text > h1 {
+        font-size: 1.5rem;
+    }
+
+    #home > .home-actions {
+        padding: 20px !important;
+    }
+}
+
+/* High Resolution Screens */
+@media (min-width: 1400px) {
+    .home-text > h1 {
+        font-size: 3.5rem;
+    }
+
+    .home-text > p {
+        font-size: 1.25rem;
+    }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .home-action,
+    .home-btn {
+        min-height: 44px;
+    }
+
+    .home-action {
+        cursor: pointer;
+    }
+
+    .home-btn:hover > p {
+        color: #000;
+    }
+
+    .home-btn:hover::after {
+        min-width: 224px;
+    }
+
+    .home-btn:hover::before {
+        min-width: 0px;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    #home {
+        background-attachment: scroll;
+    }
+    
+    .home-btn::before,
+    .home-btn::after {
+        transition: none;
+    }
 }
