@@ -3,318 +3,469 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Elegenica</title>
-    <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    />
-    <link rel="stylesheet" href="./style.css" />
+    <title>Elegencia Clone</title>
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <link rel="shortcut icon" href="./svgs/favicon.svg" type="image/x-icon">
   </head>
+
   <body>
-    <!-- Header section Start  -->
-    <ul class="menu">
-      <li><a href="">HOME</a></li>
-      <li><a href="">ABOUT</a></li>
-      <li><a href="">ROOM</a></li>
-      <li><a href="">EVENT</a></li>
-      <li><a href="">BLOG</a></li>
-      <li><a href="">PAGES</a></li>
-    </ul>
-    <header>
-      <div class="primary-header">
-        <div class="header-logo"><a href="" class="logo">BOOK NOW</a></div>
-        <div class="logo-image">
-          <img src="./images/logo.png" alt="" />
-        </div>
-        <!-- From Uiverse.io by david-mohseni -->
-        <label for="menu-icon" class="menu-icon">
-          <input id="menu-icon" type="checkbox" />
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
+    <!-- Header -->
+    <header class="navbar">
+      <div class="header-top">
+        <a href="#" class="book-now-btn">Book Now</a>
+        <a href="#" class="logo">
+          <img
+            src="./images/header/logo.png"
+            width="127"
+            height="46"
+            alt="logo image"
+          />
+        </a>
+        <a href="#" class="logo-icon">
+          <img
+            src="./svgs/favicon.svg"
+            width="40"
+            height="30"
+            alt="favicon icon"
+          />
+        </a>
       </div>
-      <div class="secondary-header">
-        <ul class="navbar">
+      <nav class="navbar-container">
+        <ul class="nav-items">
           <li class="nav-item">
-            <a href="" class="nav-link">home</a>
+            <a class="nav-item-link" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">about</a>
+            <a class="nav-item-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">room</a>
+            <a class="nav-item-link" href="#rooms">Rooms</a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">event</a>
+            <a class="nav-item-link" href="#services">Services</a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">blog</a>
+            <a class="nav-item-link" href="#features">Features</a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">pages</a>
+            <a class="nav-item-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Home -->
+      <section id="home">
+        <div class="home-text">
+          <p>Excusine Hotel & Resort</p>
+          <h1>Luxury Meets Serenity At Our</h1>
+        </div>
+        <div class="home-actions">
+          <div class="home-action date-from">
+            <p>01-09-2025</p>
+            <img src="./svgs/home/calender.svg" alt="calender icon" />
+          </div>
+          <div class="home-action date-to">
+            <p>30-11-2025</p>
+            <img src="./svgs/home/calender.svg" alt="calender icon" />
+          </div>
+          <div class="home-action gender">
+            <p>Adult</p>
+            <img
+              src="./svgs/angle-arrow-down.svg"
+              alt="angle arrow down icon"
+            />
+          </div>
+          <div class="home-action age">
+            <p>Children</p>
+            <img
+              src="./svgs/angle-arrow-down.svg"
+              alt="angle arrow down icon"
+            />
+          </div>
+          <button class="home-btn">
+            <p>Check Availability</p>
+          </button>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about">
+        <!-- <img class="about-img" src="./images/about/about-img.jpeg" alt="about image"> -->
+        <img
+          class="about-img"
+          src="./images/about/about.jpeg"
+          alt="about image"
+        />
+        <div class="section-title">
+          <div class="section-title-line"></div>
+          <p>Welcome</p>
+        </div>
+        <h2 class="section-heading">
+          Experience the Pinnacle of Luxury at <span>"Excusine hotel"</span>
+        </h2>
+        <p class="about-desc about-desc-1">
+          Welcome to our resort, where culinary artistry meets exceptional
+          dining experiences. At, we strive to create a gastronomic haven that
+          tantalizes your taste buds and leaves you with unforgettable memories.
+        </p>
+        <p class="about-desc about-desc-2">
+          Lorem to our hotel, where culinary artistry meets exceptional dining
+          experiences. At, we strive to create a gastronomic haven that.
+        </p>
+        <img
+          class="signature-img"
+          src="./images/about/signature.png"
+          alt="signature image"
+        />
+      </section>
+
+      <!-- Rooms -->
+      <section id="rooms">
+        <div class="rooms-head">
+          <p class="rooms-title">Accomodation</p>
+          <h2 class="rooms-heading">Room / Suits</h2>
+        </div>
+        <div class="rooms-cards">
+          <!-- room 1 -->
+          <div class="room-card">
+            <div class="room-img">
+              <img src="./images/rooms/room_1.jpeg" alt="room 1 image" />
+              <div class="room-price">
+                <p>Starts At $259</p>
+              </div>
+            </div>
+            <div class="room-text">
+              <h3 class="room-heading">The Royal Serenity Suite</h3>
+              <div class="room-specs">
+                <p class="room-spec">120 m2</p>
+                <p class="room-spec">3 beds</p>
+                <p class="room-spec">1 Bathroom</p>
+              </div>
+              <p class="room-desc">
+                Contrary to popular belief, Lorem Ipsum is not simply random
+                text. It has roots in a piece of classical Latin literature.
+              </p>
+              <a href="#" class="room-btn" role="button">
+                <span>Room Details</span>
+                <img
+                  src="./svgs/gold-arrow-right.svg"
+                  alt="gold arrow right icon"
+                />
+              </a>
+            </div>
+          </div>
+          <!-- room 2 -->
+          <div class="room-card">
+            <div class="room-img">
+              <img src="./images/rooms/room_2.jpeg" alt="room 2 image" />
+              <div class="room-price">
+                <p>Starts At $259</p>
+              </div>
+            </div>
+            <div class="room-text">
+              <h3 class="room-heading">The Royal Serenity Suite</h3>
+              <div class="room-specs">
+                <p class="room-spec">120 m2</p>
+                <p class="room-spec">3 beds</p>
+                <p class="room-spec">1 Bathroom</p>
+              </div>
+              <p class="room-desc">
+                Contrary to popular belief, Lorem Ipsum is not simply random
+                text. It has roots in a piece of classical Latin literature.
+              </p>
+              <a href="#" class="room-btn" role="button">
+                <span>Room Details</span>
+                <img
+                  src="./svgs/gold-arrow-right.svg"
+                  alt="gold arrow right icon"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="rooms-btn">
+          <p>View More</p>
+        </a>
+      </section>
+
+      <!-- Services -->
+      <section id="services">
+        <div class="services-text">
+          <div class="section-title">
+            <div class="section-title-line"></div>
+            <p>Services</p>
+          </div>
+          <div class="section-heading">
+            Core <br />
+            <span>Services</span>
+          </div>
+          <ul class="services-list">
+            <li class="service-item">1 / Michelin fine Restaurants</li>
+            <li class="service-item">2 / Appointed Penthouses</li>
+            <li class="service-item">3 / Spa and Wellness Sanctuary</li>
+            <li class="service-item">4 / VIP Lounges and Amenities</li>
+            <li class="service-item">5 / Event and Conference</li>
+          </ul>
+        </div>
+        <div class="services-img">
+          <img src="./images/services/service.png" alt="service image" />
+          <div class="service-explore">
+            <div>
+              <img src="./svgs/white-arrow-right.svg" alt="white arrow right" />
+              <p>Explore</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Statistics -->
+      <section id="statistics">
+        <div class="statistic-item">
+          <p class="stat-number">99+</p>
+          <p class="stat-text"><span>01 /</span> Booking Month</p>
+        </div>
+        <div class="statistic-item">
+          <p class="stat-number">130+</p>
+          <p class="stat-text"><span>01 /</span> Visitors daily</p>
+        </div>
+        <div class="statistic-item">
+          <p class="stat-number">86+</p>
+          <p class="stat-text"><span>01 /</span> Positive feedback</p>
+        </div>
+        <div class="statistic-item">
+          <p class="stat-number">23+</p>
+          <p class="stat-text"><span>01 /</span> Awards & honors</p>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section id="testimonials">
+        <div class="testimonial-box">
+          <img
+            src="./svgs/testimonials/testimonial_icon_l.svg"
+            alt="testimonial_icon_l"
+          />
+          <div class="testimonial-text">
+            <img
+              class="testimoni-img"
+              src="./images/testimonials/testimoni.jpeg"
+              alt="testimoni image"
+            />
+            <p class="testimoni-name">Steven K. Roberts</p>
+            <p class="testimoni-country">From USA</p>
+            <p class="testimonial">
+              “Their talented team of passionate chefs masterfully <br />
+              crafts each dish, combining the finest ingredients with <br />
+              innovative techniques to present culinary creations that <br />
+              are as visually stunning as they are delicious.”
+            </p>
+          </div>
+          <img
+            src="./svgs/testimonials/testimonial_icon_r.svg"
+            alt="testimonial_icon_r"
+          />
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section id="features">
+        <div class="features-head">
+          <p class="features-title">Extra Features</p>
+          <h2 class="features-heading">Why Choose Us</h2>
+        </div>
+        <div class="features-container">
+          <!-- feature 1 -->
+          <div class="around-feature">
+            <div class="feature">
+              <div class="feature-icon">
+                <img src="./svgs/features/wifi.svg" alt="wifi icon" />
+              </div>
+              <div class="feature-text">
+                <h3 class="feature-heading">
+                  <span>01 /</span> Wi-Fi <br />
+                  Connection
+                </h3>
+                <p class="feature-desc">
+                  Contrary to popular belief, Lorem Ipsum is not simply random
+                  text. It has roots in a piece of classical Latin literature.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- feature 2 -->
+          <div class="around-feature">
+            <div class="feature">
+              <div class="feature-icon">
+                <img src="./svgs/features/laundry.svg" alt="laundry icon" />
+              </div>
+              <div class="feature-text">
+                <h3 class="feature-heading">
+                  <span>02 /</span> Laundry <br />
+                  Services
+                </h3>
+                <p class="feature-desc">
+                  Contrary to popular belief, Lorem Ipsum is not simply random
+                  text. It has roots in a piece of classical Latin literature.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- feature 3 -->
+          <div class="around-feature">
+            <div class="feature">
+              <div class="feature-icon">
+                <img src="./svgs/features/man.svg" alt="man icon" />
+              </div>
+              <div class="feature-text">
+                <h3 class="feature-heading">
+                  <span>03 /</span> Fitness Center
+                </h3>
+                <p class="feature-desc">
+                  Contrary to popular belief, Lorem Ipsum is not simply random
+                  text. It has roots in a piece of classical Latin literature.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- feature 4 -->
+          <div class="around-feature">
+            <div class="feature">
+              <div class="feature-icon">
+                <img src="./svgs/features/car.svg" alt="car icon" />
+              </div>
+              <div class="feature-text">
+                <h3 class="feature-heading">
+                  <span>04 /</span> Limous Services
+                </h3>
+                <p class="feature-desc">
+                  Contrary to popular belief, Lorem Ipsum is not simply random
+                  text. It has roots in a piece of classical Latin literature.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section id="gallery">
+        <div class="gallery-head">
+          <p class="gallery-title">Gallery</p>
+          <h2 class="gallery-heading">Our Gallery</h2>
+        </div>
+        <div class="gallery-container">
+          <img
+            class="gallery-img"
+            src="./images/gallery/gallery_show_1.jpeg"
+            alt="gallery_show_1"
+          />
+          <img
+            class="gallery-img"
+            src="./images/gallery/gallery_show_2.jpeg"
+            alt="gallery_show_2"
+          />
+          <img
+            class="gallery-img"
+            src="./images/gallery/gallery_show_3.jpeg"
+            alt="gallery_show_3"
+          />
+          <img
+            class="gallery-img"
+            src="./images/gallery/gallery_show_4.jpeg"
+            alt="gallery_show_4"
+          />
+          <img
+            class="gallery-img"
+            src="./images/gallery/gallery_show_1.jpeg"
+            alt="gallery_show_1"
+          />
+          <img
+            class="gallery-img"
+            src="./images/gallery/gallery_show_2.jpeg"
+            alt="gallery_show_2"
+          />
+          <img
+            class="gallery-img"
+            src="./images/gallery/gallery_show_3.jpeg"
+            alt="gallery_show_3"
+          />
+          <img
+            class="gallery-img"
+            src="./images/gallery/gallery_show_4.jpeg"
+            alt="gallery_show_4"
+          />
+        </div>
+      </section>
+
+      <!-- To Top -->
+      <section id="to-top">
+        <a href="#">
+          <img
+            class="angle-arrow-top"
+            src="./svgs/angle-arrow-top.svg"
+            alt="angle arrow top"
+          />
+          <img class="logo-img" src="./images/Elegencia.png" alt="logo image" />
+        </a>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-top">
+        <a class="email" href="mailto:info@example.com">info@example.com</a>
+        <ul class="footer-items">
+          <li class="footer-item">
+            <a class="footer-item-link" href="#home">Home</a>
+          </li>
+          <li class="footer-item">
+            <a class="footer-item-link" href="#about">About</a>
+          </li>
+          <li class="footer-item">
+            <a class="footer-item-link" href="#rooms">Rooms</a>
+          </li>
+          <li class="footer-item">
+            <a class="footer-item-link" href="#services">Services</a>
+          </li>
+          <li class="footer-item">
+            <a class="footer-item-link" href="#features">Features</a>
+          </li>
+          <li class="footer-item">
+            <a class="footer-item-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
-    </header>
-
-    <!-- hero section  -->
-    <section class="hero">
-      <div
-        id="carouselExampleControls"
-        class="carousel slide"
-        data-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              class="d-block w-100"
-              src="./images/hotel_1.png"
-              alt="First slide"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <p class="slider-mini-title">Excusine Hotel &amp; Resort</p>
-              <h3 class="slider-title">Luxury Meets Serenity at our</h3>
-            </div>
+      <div id="contact" class="footer-bottom">
+        <address>
+          <div class="contact-numbers">
+            <a class="contact-number" href="tel:1-800-915-6271"
+              >1-800-915-6271</a
+            >
+            <a class="contact-number" href="tel:1-800-915-6271"
+              >1-800-915-6271</a
+            >
           </div>
-          <div class="carousel-item">
-            <img
-              class="d-block w-100"
-              src="./images/hotel_2.png"
-              alt="Second slide"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <p class="slider-mini-title">Excusine Hotel &amp; Resort</p>
-              <h3 class="slider-title">Luxury Meets Serenity at our</h3>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              class="d-block w-100"
-              src="./images/hotel_3.png"
-              alt="Third slide"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <p class="slider-mini-title">Excusine Hotel &amp; Resort</p>
-              <h3 class="slider-title">Luxury Meets Serenity at our</h3>
-            </div>
-          </div>
-        </div>
-        <a
-          class="carousel-control-prev"
-          href="#carouselExampleControls"
-          role="button"
-          data-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#carouselExampleControls"
-          role="button"
-          data-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
+          <a class="location" href="https://maps.app.goo.gl/gAd1JdfRW5d6eHkn7">
+            2726 Av. PapineauMontreal, <br />
+            QC H2K 4J6, Canada
+          </a>
+        </address>
+        <form class="contact-form">
+          <input type="email" placeholder="Enter Your Email" />
+          <a href="#">
+            <img src="./svgs/footer/send.svg" alt="send icon" />
+          </a>
+        </form>
+        <a href="#rooms" class="booking-btn">
+          <p>Booking</p>
         </a>
       </div>
-      <div class="hero-checkig-from-section">
-        <div class="date-input-style1">
-          <input
-            class="date-input"
-            value="2023-07-22"
-            type="date"
-            name="date"
-          />
-          <div class="date-icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="25"
-              height="25"
-              viewBox="0 0 25 25"
-              fill="none"
-            >
-              <mask
-                id="mask0_1166_82205"
-                style="mask-type: luminance"
-                maskUnits="userSpaceOnUse"
-                x="0"
-                y="0"
-                width="25"
-                height="25"
-              >
-                <path
-                  d="M0.995117 0.140627H24.9951V24.1406H0.995117V0.140627Z"
-                  fill="white"
-                ></path>
-              </mask>
-              <g mask="url(#mask0_1166_8220)">
-                <path
-                  d="M12.0732 18.6094H13.917M17.6152 18.6094H19.4589M6.54198 18.6094H8.38571M12.0732 13.0781H13.917M17.6152 13.0781H19.4589M6.54198 13.0781H8.38571M1.93262 8.45311H24.0683M18.537 5.68749V1.07813M7.46387 5.68749V1.07813M5.63077 23.2031H20.3701C22.4125 23.2031 24.0683 21.5474 24.0683 19.5049V6.62006C24.0683 4.57763 22.4125 2.92186 20.3701 2.92186H5.63077C3.58834 2.92186 1.93262 4.57763 1.93262 6.62006V19.5049C1.93262 21.5474 3.58834 23.2031 5.63077 23.2031Z"
-                  stroke="#FFD28D"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
-              </g>
-            </svg>
-          </div>
-        </div>
-        <div class="date-input-style1">
-          <input
-            class="date-input"
-            value="2023-07-22"
-            type="date"
-            name="date"
-          />
-          <div class="date-icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="25"
-              height="25"
-              viewBox="0 0 25 25"
-              fill="none"
-            >
-              <mask
-                id="mask0_1166_82520"
-                style="mask-type: luminance"
-                maskUnits="userSpaceOnUse"
-                x="0"
-                y="0"
-                width="25"
-                height="25"
-              >
-                <path
-                  d="M0.995117 0.140627H24.9951V24.1406H0.995117V0.140627Z"
-                  fill="white"
-                ></path>
-              </mask>
-              <g mask="url(#mask0_1166_8220)">
-                <path
-                  d="M12.0732 18.6094H13.917M17.6152 18.6094H19.4589M6.54198 18.6094H8.38571M12.0732 13.0781H13.917M17.6152 13.0781H19.4589M6.54198 13.0781H8.38571M1.93262 8.45311H24.0683M18.537 5.68749V1.07813M7.46387 5.68749V1.07813M5.63077 23.2031H20.3701C22.4125 23.2031 24.0683 21.5474 24.0683 19.5049V6.62006C24.0683 4.57763 22.4125 2.92186 20.3701 2.92186H5.63077C3.58834 2.92186 1.93262 4.57763 1.93262 6.62006V19.5049C1.93262 21.5474 3.58834 23.2031 5.63077 23.2031Z"
-                  stroke="#FFD28D"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
-              </g>
-            </svg>
-          </div>
-        </div>
-        <div class="select-input-style1">
-          <select class="select-option">
-            <option selected="" value="1">Adult</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-          <div class="select-icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="10"
-              viewBox="0 0 18 10"
-              fill="none"
-            >
-              <path
-                d="M8.99516 9.502C8.80335 9.502 8.61135 9.42869 8.46491 9.28225L0.964914 1.78225C0.671852 1.48919 0.671852 1.01463 0.964914 0.72175C1.25798 0.428875 1.73254 0.428688 2.02541 0.72175L8.99516 7.6915L15.9649 0.72175C16.258 0.428688 16.7325 0.428688 17.0254 0.72175C17.3183 1.01481 17.3185 1.48937 17.0254 1.78225L9.52541 9.28225C9.37898 9.42869 9.18698 9.502 8.99516 9.502Z"
-                fill="#fff"
-              ></path>
-            </svg>
-          </div>
-        </div>
-        <div class="select-input-style1">
-          <select class="select-option">
-            <option selected="" value="1">Children</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-          <div class="select-icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="10"
-              viewBox="0 0 18 10"
-              fill="none"
-            >
-              <path
-                d="M8.99516 9.502C8.80335 9.502 8.61135 9.42869 8.46491 9.28225L0.964914 1.78225C0.671852 1.48919 0.671852 1.01463 0.964914 0.72175C1.25798 0.428875 1.73254 0.428688 2.02541 0.72175L8.99516 7.6915L15.9649 0.72175C16.258 0.428688 16.7325 0.428688 17.0254 0.72175C17.3183 1.01481 17.3185 1.48937 17.0254 1.78225L9.52541 9.28225C9.37898 9.42869 9.18698 9.502 8.99516 9.502Z"
-                fill="#fff"
-              ></path>
-            </svg>
-          </div>
-        </div>
-        <div class="ak-btn">
-          <button type="submit">Check Availability</button>
-        </div>
-      </div>
-    </section>
+      <p class="copyright">Copyright 2023 All Right Reserved</p>
+    </footer>
 
-    <!-- about  -->
-    <section class="ak-about-bg-color">
-      <div class="ak-height-150 ak-height-lg-60"></div>
-      <div class="container-fluid">
-        <div class="ak-about ak-style-2">
-          <div class="about-img-2">
-            <img src="./images/about2.jpg.jpeg" alt="..." />
-          </div>
-          <div class="text-content">
-            <div class="ak-section-heading ak-sytle-2">
-              <div class="mini-title style-1">
-                <div class="mini-title-border"></div>
-                <p class="mini-text">Welcome</p>
-              </div>
-              <h2 class="section-title anim-title-2">
-                Experience the Pinnacle of Luxury at "<span>Excusine Hotel</span
-                >"
-              </h2>
-
-              <p class="section-desp">
-                Welcome to our resort, where culinary artistry meets exceptional
-                dining experiences. At, we strive to create a gastronomic haven
-                that tantalizes your taste buds and leaves you with
-                unforgettable memories.
-              </p>
-              <br />
-              <p class="section-desp">
-                Lorem to our hotel, where culinary artistry meets exceptional
-                dining experiences. At, we strive to create a gastronomic haven
-                that.
-              </p>
-            </div>
-            <div class="ak-signature">
-              <img src="./images/signature.png" alt="..." />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-
-    <script src="./script.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
+    <script src="./script.js" type="text/javascript"></script>
   </body>
 </html>

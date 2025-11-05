@@ -1,15 +1,11 @@
-
-const menuToggle = document.getElementById('menu-icon');
-const menu = document.querySelector('.menu');
+let navbar = document.querySelector(".navbar");
 
 
-menuToggle.addEventListener('change',()=>{
-    if(menuToggle.checked){
-        menu.classList.add('active')
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 15) {
+        navbar.classList.add("isScrolled");
+
+    } else {
+        navbar.classList.remove("isScrolled");
     }
-    else{
-        menu.classList.remove('active')
-    }
-})
-
-
+});
